@@ -13,8 +13,8 @@ export default function Header() {
             <p>Serving our community with excellence and integrity</p>
             <select className="language-selector">
               <option value="en">English</option>
-              <option value="es">Español</option>
-              <option value="fr">Français</option>
+              <option value="es">Bangla</option>
+              {/* <option value="fr">Français</option> */}
             </select>
           </div>
         </div>
@@ -24,7 +24,7 @@ export default function Header() {
         <div className="container navbar-container">
           <Link to="/" className="logo">
             <span className="logo-icon">◆</span>
-            <span className="logo-text">Civic Services</span>
+            <span className="logo-text">Metro-Police</span>
           </Link>
 
           <button

@@ -66,7 +66,7 @@ export default function Home() {
     <main className="home">
       <section className="hero">
         <div className="hero-content">
-          <h1>Welcome to Civic Services</h1>
+          <h1>Welcome to Metro-Police</h1>
           <p>Your gateway to efficient government services</p>
           <Link to="/services" className="btn-primary">
             Explore Services
