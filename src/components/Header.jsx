@@ -14,7 +14,6 @@ export default function Header() {
             <select className="language-selector">
               <option value="en">English</option>
               <option value="es">Bangla</option>
-              {/* <option value="fr">Français</option> */}
             </select>
           </div>
         </div>
@@ -44,7 +43,10 @@ export default function Header() {
             <li><Link to="/contact">Contact</Link></li>
           </ul>
 
-          <button className="btn-login">Login</button>
+          {/* ✅ FIXED LOGIN NAVIGATION */}
+          <Link to="/login" className="btn-login">
+            Login
+          </Link>
         </div>
       </nav>
     </header>
