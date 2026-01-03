@@ -10,11 +10,15 @@ export default function Header() {
       <div className="header-top">
         <div className="container">
           <div className="header-top-content">
-            <p>Serving our community with excellence and integrity</p>
+            <p>Serving the Public with excellence and integrity</p>
             <select className="language-selector">
               <option value="en">English</option>
+<<<<<<< HEAD
               <option value="es">Bangla</option>
               {/* <option value="fr">Français</option> */}
+=======
+              <option value="bn">Bangla</option>
+>>>>>>> bc2be25c6cac98e6e03c478a6ff32f45226212d6
             </select>
           </div>
         </div>
