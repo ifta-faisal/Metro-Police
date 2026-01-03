@@ -91,7 +91,7 @@ export default function Services() {
     <main className="services-page">
       <section className="page-hero">
         <div className="container">
-          <h1>Government Services</h1>
+          <h1>Metro-Police Services</h1>
           <p>Find and apply for the services you need</p>
         </div>
       </section>

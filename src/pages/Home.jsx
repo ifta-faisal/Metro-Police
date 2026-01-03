@@ -67,7 +67,7 @@ export default function Home() {
       <section className="hero">
         <div className="hero-content">
           <h1>Welcome to Metro-Police</h1>
-          <p>Your gateway to efficient government services</p>
+          <p>Your gateway to efficient police services</p>
           <Link to="/services" className="btn-primary">
             Explore Services
           </Link>
@@ -92,7 +92,7 @@ export default function Home() {
         <div className="container">
           <div className="section-header">
             <h2>Our Services</h2>
-            <p>Access a wide range of government services online</p>
+            <p>Access a wide range of police services online</p>
           </div>
 
           <div className="services-grid">
