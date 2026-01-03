@@ -31,8 +31,8 @@ export default function About() {
     <main className="about-page">
       <section className="page-hero">
         <div className="container">
-          <h1>About Civic Services</h1>
-          <p>Transforming government services for the digital age</p>
+          <h1>About Metro-Police Services</h1>
+          <p>Transforming Police services for the digital age</p>
         </div>
       </section>
 
@@ -41,14 +41,14 @@ export default function About() {
           <section className="mission-section">
             <h2>Our Mission</h2>
             <p>
-              The Civic Services Portal is dedicated to making government services more accessible,
+              The Metro-Police Services Portal is dedicated to making police services more accessible,
               efficient, and user-friendly. We believe that every citizen deserves easy access to the
               services they need, without unnecessary bureaucracy or delays.
             </p>
             <p>
-              Through innovation and technology, we're reimagining how government services are delivered,
+              Through innovation and technology, we're reimagining how police services are delivered,
               making it faster and simpler for you to apply for permits, pay bills, access records, and
-              connect with government agencies.
+              connect with police agencies.
             </p>
           </section>
 
