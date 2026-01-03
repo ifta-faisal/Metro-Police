@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-section">
             <h4>About Us</h4>
-            <p>Civic Services Portal provides easy access to essential government services for all residents and businesses.</p>
+            <p>Metro Police provides easy access to essential government services for all residents and businesses.</p>
             <div className="social-links">
               <a href="#" aria-label="Facebook">f</a>
               <a href="#" aria-label="Twitter">𝕏</a>
