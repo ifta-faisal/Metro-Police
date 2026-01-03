@@ -33,20 +33,20 @@ export default function Contact() {
   const contactInfo = [
     {
       title: 'General Inquiries',
-      phone: '(555) 123-4567',
-      email: 'info@civicservices.gov',
-      hours: 'Mon - Fri: 8:00 AM - 5:00 PM'
+      phone: '01799999999',
+      email: 'metropolice.gov.bd',
+      hours: 'Sat - Fri: 24/7'
     },
     {
       title: 'Emergency Support',
-      phone: '(555) 123-9999',
-      email: 'emergency@civicservices.gov',
+      phone: '01799999999',
+      email: 'metropolice.gov.bd',
       hours: '24/7'
     },
     {
       title: 'Technical Support',
-      phone: '(555) 123-8888',
-      email: 'support@civicservices.gov',
+      phone: '01799999999',
+      email: 'metropolice.gov.bd',
       hours: 'Mon - Sat: 9:00 AM - 6:00 PM'
     }
   ]
