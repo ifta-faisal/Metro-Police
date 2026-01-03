@@ -1,2 +1,2 @@
 # Metro-Police
-“This is a Software Engineering Lab project.”
+“This is our Software Engineering Lab project.”
