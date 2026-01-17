@@ -41,6 +41,8 @@ export default function AdminDashboard() {
     } catch (error) {
       console.error('Error fetching stats:', error);
     }
+  
+  
   };
 
   return (
