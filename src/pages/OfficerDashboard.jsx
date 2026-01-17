@@ -15,6 +15,8 @@ export default function OfficerDashboard() {
     assignedCases: 0
   });
 
+
+  
   useEffect(() => {
     fetchStats();
   }, []);
