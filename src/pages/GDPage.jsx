@@ -15,6 +15,8 @@ export default function GDPage() {
     fetchGD();
   }, []);
 
+
+  
   const fetchGD = async () => {
     setLoading(true);
     setMessage("");
