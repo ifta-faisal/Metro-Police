@@ -41,6 +41,8 @@ export default function AdminDashboard() {
     } catch (error) {
       console.error('Error fetching stats:', error);
     }
+  
+  
   };
 
   return (
@@ -53,32 +55,10 @@ export default function AdminDashboard() {
       
 
       <div className="quick-actions">
-        <h2>Management Tools</h2>
+        <h2>Management Tools</h2>         
         <div className="actions-grid">
-          {/* <a href="/admin/reports" className="action-card">
-            <h3>Crime Reports</h3>
-            <p>Manage all crime reports</p>
-          </a>
-          <a href="/admin/criminals" className="action-card">
-            <h3>Criminal Database</h3>
-            <p>Manage criminal records</p>
-          </a>
-          <a href="/admin/maps" className="action-card">
-            <h3>Crime Risk Map</h3>
-            <p>View and manage crime data</p>
-          </a>
-          <a href="/admin/predictions" className="action-card">
-            <h3>Crime Predictions</h3>
-            <p>Generate and view predictions</p>
-          </a>
-          <a href="/admin/patrolling" className="action-card">
-            <h3>Patrolling Data</h3>
-            <p>Manage patrolling information</p>
-          </a>
-          <a href="/admin/sos" className="action-card emergency">
-            <h3>SOS Alerts</h3>
-            <p>Monitor emergency alerts</p>
-          </a> */}
+
+
           <a href="/admin/officer-performance" className="action-card">
             <h3>Officer Performance</h3>
             <p>Analytics and performance metrics</p>
@@ -104,3 +84,7 @@ export default function AdminDashboard() {
     </div>
   );
 }
+
+
+
+

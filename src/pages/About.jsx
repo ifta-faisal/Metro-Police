@@ -25,6 +25,8 @@ export default function About() {
     { number: '50+', label: 'Services Available' },
     { number: '99.9%', label: 'Uptime' },
     { number: '24/7', label: 'Support' }
+
+
   ]
 
   return (
