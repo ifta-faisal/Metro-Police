@@ -32,6 +32,8 @@ export default function CitizenDashboard() {
         reports: reportsRes.data.reports?.length || 0,
         applications: pccRes.data.applications?.length || 0,
         alerts: sosRes.data.alerts?.length || 0
+     
+     
       });
     } catch (error) {
       console.error('Error fetching stats:', error);
