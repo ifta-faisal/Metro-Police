@@ -281,6 +281,7 @@ CREATE TABLE IF NOT EXISTS crime_predictions (
 -- ============================================
 -- INDEXES FOR PERFORMANCE
 -- ============================================
+
 CREATE INDEX idx_traffic_fines_user ON traffic_fines(user_id);
 CREATE INDEX idx_traffic_fines_status ON traffic_fines(status);
 CREATE INDEX idx_crime_reports_user ON crime_reports(user_id);
