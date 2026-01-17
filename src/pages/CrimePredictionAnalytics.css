@@ -1,0 +1,251 @@
+.crime-prediction-analytics-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #666;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.summary-section {
+  margin-bottom: 30px;
+}
+
+.summary-section h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.summary-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.summary-card.high-risk {
+  border-color: #dc3545;
+  background: #fff5f5;
+}
+
+.summary-card.medium-risk {
+  border-color: #ffc107;
+  background: #fffef5;
+}
+
+.summary-card.low-risk {
+  border-color: #28a745;
+  background: #f5fff5;
+}
+
+.summary-card h3 {
+  margin: 0 0 10px 0;
+  color: #666;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.summary-card .stat-number {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.loading, .no-data {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.predictions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prediction-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.prediction-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.prediction-header h3 {
+  margin: 0 0 10px 0;
+  color: #1a1a1a;
+}
+
+.risk-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin-right: 10px;
+}
+
+.risk-score {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #e9ecef;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #495057;
+}
+
+.view-details-btn {
+  padding: 6px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-details-btn:hover {
+  background: #0056b3;
+}
+
+.prediction-info {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.stat-value {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.stat-value.trend {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.trend-direction {
+  font-size: 12px;
+  color: #666;
+  font-weight: normal;
+}
+
+.prediction-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.prediction-details h4 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.monthly-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.month-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+  background: #f8f9fa;
+  border-radius: 4px;
+}
+
+.month-label {
+  font-weight: 600;
+  color: #333;
+  min-width: 100px;
+}
+
+.month-crimes {
+  color: #555;
+  flex: 1;
+}
+
+.month-severity {
+  color: #dc3545;
+  font-size: 12px;
+}
+
+.refresh-btn {
+  margin-top: 30px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.refresh-btn:hover {
+  background: #0056b3;
+}

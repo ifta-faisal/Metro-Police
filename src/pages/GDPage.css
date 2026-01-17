@@ -1,0 +1,187 @@
+.gd-management-page {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.page-header {
+  margin-bottom: 30px;
+}
+
+.page-header h1 {
+  color: #1a1a1a;
+  margin-bottom: 10px;
+}
+
+.page-header p {
+  color: #666;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.message.success {
+  background: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.message.error {
+  background: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+.loading, .no-data {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.gd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gd-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.gd-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.gd-header h3 {
+  margin: 0 0 10px 0;
+  color: #1a1a1a;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.badge-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.badge-under_investigation {
+  background: #cff4fc;
+  color: #055160;
+}
+
+.badge-resolved {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.badge-closed {
+  background: #f8d7da;
+  color: #842029;
+}
+
+.view-details-btn {
+  padding: 6px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.view-details-btn:hover {
+  background: #0056b3;
+}
+
+.gd-info {
+  margin-bottom: 15px;
+}
+
+.gd-info p {
+  margin: 8px 0;
+  color: #555;
+}
+
+.gd-details {
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.gd-details h4 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.gd-details p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.gd-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+.gd-actions button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.gd-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-approve {
+  background: #28a745;
+  color: white;
+}
+
+.btn-approve:hover:not(:disabled) {
+  background: #218838;
+}
+
+.btn-reject {
+  background: #dc3545;
+  color: white;
+}
+
+.btn-reject:hover:not(:disabled) {
+  background: #c82333;
+}
+
+.btn-investigating {
+  background: #17a2b8;
+  color: white;
+}
+
+.btn-investigating:hover:not(:disabled) {
+  background: #138496;
+}

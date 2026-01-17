@@ -1,0 +1,142 @@
+.criminal-search {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.search-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.search-type-selector {
+  margin-bottom: 1rem;
+}
+
+.search-type-selector label {
+  margin-right: 1rem;
+  font-weight: 500;
+}
+
+.search-type-selector select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.search-input-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-input-group input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.btn-search {
+  padding: 0.75rem 2rem;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-search:hover:not(:disabled) {
+  background: #0052a3;
+}
+
+.btn-search:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  padding: 1rem;
+  background: #f8d7da;
+  color: #721c24;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.results-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.criminal-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  display: flex;
+  gap: 1rem;
+}
+
+.criminal-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+}
+
+.criminal-info {
+  flex: 1;
+}
+
+.criminal-info h3 {
+  margin: 0 0 1rem 0;
+  color: #1a1a1a;
+}
+
+.criminal-info p {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.status.wanted {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.status.arrested {
+  background: #d1e7dd;
+  color: #0f5132;
+}
+
+.status.released {
+  background: #d3d3d3;
+  color: #333;
+}
+
+.risk-score {
+  font-weight: bold;
+  color: #dc3545;
+  font-size: 1.1rem;
+}
