@@ -75,4 +75,5 @@ export default function Map({
       {children}
     </MapContainer>
   );
+
 }
