@@ -14,6 +14,9 @@ export default function SOSMonitoring() {
   const [isPolling, setIsPolling] = useState(true);
   const intervalRef = useRef(null);
 
+
+
+  
   useEffect(() => {
     fetchSOSAlerts();
     
