@@ -16,6 +16,8 @@ export default function CriminalSearch() {
     e.preventDefault();
     if (!searchQuery.trim()) {
       setError('Please enter a search query');
+
+      
       return;
     }
 

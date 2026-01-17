@@ -10,6 +10,9 @@ export default function SOS() {
   const [message, setMessage] = useState('');
   const [location, setLocation] = useState(null);
 
+
+
+  
   const getLocation = () => {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition(
