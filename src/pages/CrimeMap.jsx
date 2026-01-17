@@ -61,6 +61,8 @@ export default function CrimeMap() {
             </div>
           )}
 
+
+
           {mapType === 'patrolling' && patrollingData.length > 0 && (
             <div className="patrol-list">
               <h4>Patrolling Areas ({patrollingData.length})</h4>
