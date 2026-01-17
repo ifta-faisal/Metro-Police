@@ -13,6 +13,7 @@ export default function Dashboard() {
     if (!loading && !isAuthenticated) {
       navigate("/Login");
     } else if (isAuthenticated && user) {
+      
       // Redirect to role-based dashboard
       if (user.role === 'admin') {
         navigate("/admin/dashboard");
