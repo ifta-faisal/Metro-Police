@@ -22,6 +22,8 @@ export default function HelpSupport() {
               <p>For any technical issues, errors, or bugs on our website or portal, contact our technical team at <a href="mailto:techsupport@metropolice.gov.bd">techsupport@metropolice.gov.bd</a>.</p>
             </div>
 
+
+
             <div className="help-card">
               <h3>Account & Login</h3>
               <p>For help with creating accounts, login issues, or password resets, reach us at <a href="mailto:support@metropolice.gov.bd">support@metropolice.gov.bd</a>.</p>
