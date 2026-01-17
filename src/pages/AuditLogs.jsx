@@ -14,6 +14,9 @@ export default function AuditLogs() {
     date: '',
     user: '',
     action: ''
+  
+  
+  
   });
 
   useEffect(() => {
