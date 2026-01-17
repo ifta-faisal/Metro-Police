@@ -12,6 +12,8 @@ export default function MissingPersonManagement() {
   const [selectedReport, setSelectedReport] = useState(null);
   const [statusFilter, setStatusFilter] = useState('');
 
+
+  
   useEffect(() => {
     fetchReports();
   }, [statusFilter]);

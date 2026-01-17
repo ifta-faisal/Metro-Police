@@ -16,6 +16,7 @@ L.Icon.Default.mergeOptions({
 });
 
 function PatrollingLayer({ patrollingData, crimeData }) {
+  
   // Calculate patrol intensity based on crime density
   const areaPatrol = {};
   
