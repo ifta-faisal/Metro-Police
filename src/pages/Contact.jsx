@@ -29,6 +29,7 @@ export default function Contact() {
       subject: '',
       message: ''
     })
+  
   }
 
   const contactInfo = [
