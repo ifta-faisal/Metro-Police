@@ -35,7 +35,9 @@ export default function AlertBroadcasting() {
     } finally {
       setLoading(false);
     }
-  };
+ 
+  
+};
 
   const handleSubmit = async (e) => {
     e.preventDefault();
