@@ -14,7 +14,9 @@ export default function FAQ() {
       question: "How do I report a missing person?",
       answer: "Use the 'Reports & Records' service to file a missing person report. Our officers will review it promptly."
     },
+    
     {
+
       question: "Can I track the status of my application?",
       answer: "Yes, you can track the status of all submitted applications in the 'Inquiries' section after logging in."
     },
