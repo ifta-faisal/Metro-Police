@@ -18,6 +18,8 @@ export default function CrimeTrendsDashboard() {
   const fetchTrends = async () => {
     setLoading(true);
     setMessage('');
+
+    
     try {
       const res = await api.get(`/admin/crime-trends?year=${selectedYear}`);
       setTrends(res.data);
