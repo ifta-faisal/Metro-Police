@@ -1,3 +1,4 @@
+/* Header container */
 .header {
   background-color: var(--white);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -6,6 +7,7 @@
   z-index: 100;
 }
 
+/* Top bar (optional) */
 .header-top {
   background-color: var(--neutral-gray);
   border-bottom: 1px solid var(--border-light);
@@ -33,6 +35,7 @@
   cursor: pointer;
 }
 
+/* Navbar */
 .navbar {
   padding: var(--spacing-md) 0;
 }
@@ -44,10 +47,11 @@
   gap: var(--spacing-lg);
 }
 
+/* Logo (image + text) */
 .logo {
   display: flex;
   align-items: center;
-  gap: var(--spacing-sm);
+  gap: var(--spacing-sm); /* spacing between logo image and text */
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--primary-blue);
@@ -59,11 +63,13 @@
   color: var(--primary-dark);
 }
 
-.logo-icon {
-  font-size: 1.5rem;
-  color: var(--primary-blue);
+/* Logo image */
+.logo-img {
+  height: 40px; /* adjust logo size */
+  width: auto;
 }
 
+/* Gradient text for logo */
 .logo-text {
   background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
   -webkit-background-clip: text;
@@ -71,6 +77,12 @@
   background-clip: text;
 }
 
+/* Hide old icon if using image logo */
+.logo-icon {
+  display: none;
+}
+
+/* Navigation links */
 .nav-links {
   display: flex;
   list-style: none;
@@ -108,6 +120,38 @@
   width: 100%;
 }
 
+/* User menu */
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-name {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.btn-logout {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background-color: #e74c3c;
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(231, 76, 60, 0.3);
+}
+
 .btn-login {
   padding: var(--spacing-sm) var(--spacing-lg);
   background-color: var(--primary-blue);
@@ -125,6 +169,7 @@
   box-shadow: 0 4px 12px rgba(0, 102, 204, 0.3);
 }
 
+/* Mobile menu toggle */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -141,6 +186,7 @@
   transition: all 0.3s ease;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .navbar-container {
     gap: var(--spacing-md);
@@ -192,5 +238,14 @@
   .language-selector {
     font-size: 0.8rem;
     padding: 4px 8px;
+  }
+
+  /* Adjust logo size on mobile */
+  .logo-img {
+    height: 30px;
+  }
+
+  .logo-text {
+    font-size: 1.1rem;
   }
 }

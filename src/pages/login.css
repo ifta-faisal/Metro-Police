@@ -1,24 +1,52 @@
+/* ===== LOGIN PAGE ===== */
 .login-page {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
   padding: 20px;
+  overflow: hidden;
 }
 
+/* Video Background */
+.login-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover; /* covers whole screen */
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+/* Optional dark overlay for readability */
+.login-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* semi-transparent dark */
+  z-index: -1;
+}
+
+/* Login Card */
 .login-card {
+  position: relative;
   background: #ffffff;
   width: 100%;
   max-width: 400px;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
 .login-card h2 {
   text-align: center;
   margin-bottom: 5px;
+  color: #222;
 }
 
 .subtitle {
@@ -28,6 +56,7 @@
   font-size: 14px;
 }
 
+/* Form Styles */
 .login-form .form-group {
   margin-bottom: 15px;
 }
@@ -96,4 +125,11 @@
 
 .create-account a:hover {
   text-decoration: underline;
+}
+
+.error-text {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-bottom: 10px;
+  text-align: center;
 }

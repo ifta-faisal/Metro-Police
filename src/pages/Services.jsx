@@ -1,103 +1,132 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { useNavigate, useLocation } from 'react-router-dom'
 import './Services.css'
 
 export default function Services() {
+  const navigate = useNavigate()
+  const location = useLocation()
+
   const [selectedCategory, setSelectedCategory] = useState('all')
   const [searchTerm, setSearchTerm] = useState('')
 
+  // ✅ ADDED PART (URL-based category selection)
+  useEffect(() => {
+    const params = new URLSearchParams(location.search)
+
+    if (params.has('safety')) setSelectedCategory('safety')
+    else if (params.has('emergency')) setSelectedCategory('emergency')
+    else if (params.has('certificates')) setSelectedCategory('certificates')
+    else if (params.has('reports')) setSelectedCategory('reports')
+    else if (params.has('payments')) setSelectedCategory('payments')
+  }, [location])
+
+  // 🔹 Services based on Quick Actions
   const allServices = [
     {
       id: 1,
-      category: 'permits',
-      title: 'Business License',
-      description: 'Apply for a business operating license to legally operate your business.',
-      duration: '5-7 business days',
-      fee: '$150'
+      category: 'payments',
+      title: 'Check Traffic Fine',
+      description: 'Check and pay your traffic fines online.',
+      duration: 'Instant',
+      fee: 'Variable'
     },
     {
       id: 2,
-      category: 'permits',
-      title: 'Vehicle Registration',
-      description: 'Register or renew your vehicle with the department of transportation.',
-      duration: '3-5 business days',
-      fee: '$50'
-    },
-    {
-      id: 3,
-      category: 'certificates',
-      title: 'Background Check Certificate',
-      description: 'Obtain official background clearance certificate for employment.',
-      duration: '7-10 business days',
-      fee: '$25'
-    },
-    {
-      id: 4,
-      category: 'certificates',
-      title: 'Traffic Clearance',
-      description: 'Get clearance certificate proving no outstanding traffic violations.',
-      duration: '1-2 business days',
-      fee: '$15'
-    },
-    {
-      id: 5,
       category: 'reports',
-      title: 'Incident Report',
-      description: 'File and retrieve official incident reports for insurance purposes.',
+      title: 'File GD Report',
+      description: 'Report a crime or general incident.',
       duration: 'Immediate',
       fee: 'Free'
     },
     {
-      id: 6,
+      id: 3,
       category: 'reports',
-      title: 'Property Records',
-      description: 'Access and download property ownership records and history.',
+      title: 'Report Lost Item',
+      description: 'Report a lost item to the police database.',
       duration: 'Immediate',
+      fee: 'Free'
+    },
+    {
+      id: 4,
+      category: 'reports',
+      title: 'Missing Person',
+      description: 'Report a missing person and track updates.',
+      duration: 'Immediate',
+      fee: 'Free'
+    },
+    {
+      id: 5,
+      category: 'certificates',
+      title: 'Apply for PCC',
+      description: 'Apply for Police Clearance Certificate.',
+      duration: '3–5 business days',
+      fee: '৳500'
+    },
+    {
+      id: 6,
+      category: 'emergency',
+      title: 'SOS Emergency',
+      description: 'Get immediate emergency police assistance.',
+      duration: 'Instant',
       fee: 'Free'
     },
     {
       id: 7,
-      category: 'payments',
-      title: 'Pay Traffic Fines',
-      description: 'Pay outstanding traffic violations and fines securely online.',
+      category: 'safety',
+      title: 'Crime Risk Map',
+      description: 'View crime risk heatmap by location.',
       duration: 'Instant',
-      fee: 'Variable'
+      fee: 'Free'
     },
     {
       id: 8,
-      category: 'payments',
-      title: 'Utility Bills Payment',
-      description: 'Pay water, electricity, and other utility bills through the portal.',
+      category: 'safety',
+      title: 'Safe Route GPS',
+      description: 'Plan safe routes for night travel.',
       duration: 'Instant',
-      fee: 'Variable'
+      fee: 'Free'
     }
   ]
 
+  // 🔹 Categories
   const categories = [
     { id: 'all', label: 'All Services' },
-    { id: 'permits', label: 'Permits & Licenses' },
-    { id: 'certificates', label: 'Certificates' },
     { id: 'reports', label: 'Reports' },
-    { id: 'payments', label: 'Payments' }
+    { id: 'certificates', label: 'Certificates' },
+    { id: 'payments', label: 'Payments' },
+    { id: 'safety', label: 'Safety Tools' },
+    { id: 'emergency', label: 'Emergency' }
   ]
 
+  // 🔹 Filtering logic
   const filteredServices = allServices.filter(service => {
-    const matchesCategory = selectedCategory === 'all' || service.category === selectedCategory
-    const matchesSearch = service.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
-                         service.description.toLowerCase().includes(searchTerm.toLowerCase())
+    const matchesCategory =
+      selectedCategory === 'all' || service.category === selectedCategory
+
+    const matchesSearch =
+      service.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      service.description.toLowerCase().includes(searchTerm.toLowerCase())
+
     return matchesCategory && matchesSearch
   })
+
+  // 🔹 Redirect to Login on Apply
+  const handleApply = () => {
+    navigate('/login')
+  }
 
   return (
     <main className="services-page">
       <section className="page-hero">
         <div className="container">
-          <h1>Metro-Police Services</h1>
-          <p>Find and apply for the services you need</p>
+          <h1>Metro Police Services</h1>
+          <p>Access essential police services quickly and securely</p>
         </div>
       </section>
 
       <section className="services-section">
         <div className="container">
+
           <div className="search-bar">
             <input
               type="text"
@@ -112,7 +141,9 @@ export default function Services() {
             {categories.map(category => (
               <button
                 key={category.id}
-                className={`filter-btn ${selectedCategory === category.id ? 'active' : ''}`}
+                className={`filter-btn ${
+                  selectedCategory === category.id ? 'active' : ''
+                }`}
                 onClick={() => setSelectedCategory(category.id)}
               >
                 {category.label}
@@ -127,23 +158,30 @@ export default function Services() {
                   <div className="service-content">
                     <h3>{service.title}</h3>
                     <p>{service.description}</p>
+
                     <div className="service-meta">
                       <span className="duration">⏱ {service.duration}</span>
                       <span className="fee">💰 {service.fee}</span>
                     </div>
                   </div>
-                  <button className="apply-btn">Apply Now</button>
+
+                  <button
+                    className="apply-btn"
+                    onClick={handleApply}
+                  >
+                    Apply Now
+                  </button>
                 </div>
               ))
             ) : (
               <div className="no-results">
                 <p>No services found matching your search.</p>
                 <button
+                  className="reset-btn"
                   onClick={() => {
                     setSearchTerm('')
                     setSelectedCategory('all')
                   }}
-                  className="reset-btn"
                 >
                   Reset Filters
                 </button>

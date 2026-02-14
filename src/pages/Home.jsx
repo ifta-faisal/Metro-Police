@@ -64,7 +64,25 @@ export default function Home() {
 
   return (
     <main className="home">
+
+      {/* HERO SECTION */}
       <section className="hero">
+
+        {/* Video Background */}
+        <video
+          className="hero-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src="/police-bg.mp4" type="video/mp4" />
+        </video>
+
+        {/* Overlay (optional for readability) */}
+        <div className="hero-overlay"></div>
+
+        {/* Centered content */}
         <div className="hero-content">
           <h1>Welcome to Metro-Police</h1>
           <p>Your gateway to efficient police services</p>
@@ -72,9 +90,9 @@ export default function Home() {
             Explore Services
           </Link>
         </div>
-        <div className="hero-background"></div>
       </section>
 
+      {/* HIGHLIGHTS */}
       <section className="highlights">
         <div className="container">
           <div className="highlights-grid">
@@ -88,6 +106,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SERVICES */}
       <section className="services-overview" id="services">
         <div className="container">
           <div className="section-header">
@@ -110,22 +129,25 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CTA */}
       <section className="cta-section">
         <div className="container">
           <div className="cta-content">
             <h2>Need Help?</h2>
-            <p>Our support team is available to assist you with any questions about our services.</p>
+            <p>
+              Our support team is available to assist you with any questions
+              about our services.
+            </p>
             <div className="cta-buttons">
               <Link to="/contact" className="btn-primary">
                 Contact Us
               </Link>
-              <a href="#faq" className="btn-secondary">
-                View FAQ
-              </a>
+              <Link to="/faq" className="btn-secondary">View FAQ</Link>
             </div>
           </div>
         </div>
       </section>
+
     </main>
   )
 }

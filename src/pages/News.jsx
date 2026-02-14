@@ -80,9 +80,9 @@ export default function News() {
                   <p className="news-date">{article.date}</p>
                   <h3>{article.title}</h3>
                   <p className="news-excerpt">{article.excerpt}</p>
-                  <a href="#" className="read-more">
+                  {/* <a href="#" className="read-more">
                     Read More →
-                  </a>
+                  </a> */}
                 </div>
               </article>
             ))}

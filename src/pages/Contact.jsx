@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import './Contact.css'
 
 export default function Contact() {
@@ -148,7 +149,8 @@ export default function Contact() {
               <div className="faq-box">
                 <h3>Frequently Asked Questions</h3>
                 <p>Have questions? Check our FAQ section for quick answers.</p>
-                <a href="#faq" className="faq-link">View FAQ</a>
+                {/* Updated link to FAQ page */}
+                <Link to="/faq" className="faq-link">View FAQ</Link>
               </div>
             </div>
           </div>
