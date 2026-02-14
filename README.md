@@ -60,5 +60,10 @@ Metro-Police/
 └── README_SETUP.md   # Detailed Installation Instructions
 ```
 
----
 
+### 👥 Team Members
+
+- **MD Ifta Faisal**
+- **MD. Israfil Hossain**
+- **Md. Biplob**
+- **Ashiq Anzum**
