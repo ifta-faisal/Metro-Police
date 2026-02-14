@@ -1,0 +1,79 @@
+.faq-page {
+  min-height: 100vh;
+  font-family: var(--font-family, Arial, sans-serif);
+  color: var(--text-dark);
+}
+
+/* Hero section */
+.faq-hero {
+  background: linear-gradient(135deg, var(--primary-blue), var(--primary-dark));
+  color: white; /* Force white text */
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.faq-hero h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: white; /* Heading white */
+}
+
+.faq-hero p {
+  font-size: 1.2rem;
+  opacity: 0.95; /* slightly brighter */
+  color: white; /* Paragraph white */
+}
+
+/* FAQ section */
+.faq-section {
+  padding: 50px 20px;
+  background-color: var(--neutral-gray);
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-card {
+  background-color: var(--white);
+  padding: 25px 30px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  border-left: 4px solid var(--primary-blue);
+  transition: all 0.3s ease;
+}
+
+.faq-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 102, 204, 0.1);
+}
+
+.faq-question {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--primary-blue);
+}
+
+.faq-answer {
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .faq-hero h1 {
+    font-size: 2rem;
+  }
+
+  .faq-hero p {
+    font-size: 1rem;
+  }
+
+  .faq-card {
+    padding: 20px;
+  }
+}

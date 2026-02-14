@@ -1,0 +1,45 @@
+.payment-method {
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.payment-method h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.fine-summary {
+  background: #f5f7fa;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+
+.payment-section {
+  margin-bottom: 30px;
+}
+
+.payment-section h2 {
+  margin-bottom: 10px;
+}
+
+.payment-options {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.payment-options button {
+  padding: 12px 20px;
+  border: none;
+  background: #003366;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.payment-options button:hover {
+  background: #0055aa;
+}

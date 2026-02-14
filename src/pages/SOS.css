@@ -1,0 +1,111 @@
+.sos-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.sos-page h1 {
+  font-size: 2.5rem;
+  color: #ff3333;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 3rem;
+}
+
+.sos-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.sos-btn {
+  width: 100%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sos-btn.emergency {
+  background: linear-gradient(135deg, #ff3333, #cc0000);
+  color: white;
+}
+
+.sos-btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(255, 51, 51, 0.4);
+}
+
+.sos-btn:active:not(:disabled) {
+  transform: scale(0.98);
+}
+
+.sos-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.sos-btn .icon {
+  font-size: 2rem;
+}
+
+.location-btn {
+  padding: 1rem 2rem;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+}
+
+.location-btn:hover {
+  background: #0052a3;
+}
+
+.message {
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 2rem 0;
+  font-size: 1.1rem;
+  background: #d1ecf1;
+  color: #0c5460;
+}
+
+.message.sending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.emergency-info {
+  background: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  text-align: left;
+}
+
+.emergency-info h3 {
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.emergency-info p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
